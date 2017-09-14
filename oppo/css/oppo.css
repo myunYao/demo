@@ -1,0 +1,540 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+body {
+}
+a {
+	text-decoration: none;
+	color: #666;
+	font-size: 14px
+}
+.at {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 14px
+}
+.top {
+	width: 100%;
+	height: 30px;
+	background-color: #096
+}
+.top ul {
+	width: 13%;
+	height: 30px;
+	position: relative;
+	left: 70%;
+}
+.top ul li {
+	width: 33%;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	float: left;
+	text-align: center;
+}
+.top ul li:hover {
+	background: rgba(153,255,204,0.5);
+}
+.top ul li::before {
+	content: "";
+	position: absolute;
+	top: 6px;
+	height: 20px;
+	left: -1px;
+	width: 1px;
+	/*渐变*/
+	background: linear-gradient(to bottom, #CCC, #999 50%, #CCC);
+}
+.header .header1 {
+	width: 100%;
+	height: 80px;
+}
+.header .header1 ul li {
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	margin: 20px;
+	display: inline;
+	position: relative;
+	left: 6%;
+	margin-top: 10px;
+}
+.header .header1 ul li .logo {
+	position: relative;
+	top: 20px;
+}
+.header .header1 ul li .ah1 {
+	position: relative;
+	left: 300px;
+	top: -6px;
+}
+.header .header1 ul li .ah1:hover {
+	color: #000;
+}
+.header .header1 ul li .a6 {
+	color: #000;
+	text-decoration: underline;
+}
+.header .header2 {
+	width: 100%;
+	height: 50px;
+}
+.header .header2 ul li {
+	color: #666;
+	display: inline;
+	position: relative;
+	left: 9%;
+}
+.center .div1 {
+	width: 80%;
+	height: 800px;
+	left: 10%;
+}
+.center .div1 header a img {
+	width: 700px;
+	height: 400px;
+	position: relative;
+	left: 8%;
+}
+.center .div1 header ul {
+	width: 300px;
+	height: 200px;
+	position: relative;
+	left: 20%;
+	top: -300px;
+}
+.center .div1 header ul .li1 a {
+	font-size: 30px;
+	color: #333;
+}
+.center .div1 header ul .li5 {
+	background-color: #096;
+	width: 100px;
+	height: 30px;
+	border-radius: 20px;
+	position: relative;
+	left: -4px;
+	top: 18px;
+}
+.center .div1 header ul .li5 a {
+	position: relative;
+	left: 18px;
+	top: 4px;
+	color: #FFF;
+}
+.center .div1 article ul .li1 img {
+	width: 700px;
+	height: 400px;
+	position: relative;
+	top: -200px;
+	left: 8%;
+}
+.center .div1 article ul .li2 img {
+	width: 700px;
+	height: 400px;
+	position: relative;
+	top: -600px;
+	left: 10%;
+}
+.center .div1 aside ul .li1 img {
+	width: 400px;
+	height: 800px;
+	position: relative;
+	top: -1400px;
+	left: 78%;
+}
+.center .div1 aside ul .li2 img {
+	width: 400px;
+	height: 800px;
+	position: relative;
+	top: -2200px;
+	left: 78%;
+}
+.center .div2 {
+	width: 80%;
+	height: 50px;
+	position: relative;
+	left: 10%;
+}
+.center .div2 hr {
+	color: #CCC;
+	z-index: 0;
+}
+.center .div2 .h2 {
+	position: relative;
+	left: 64%;
+}
+.center .div2 .li1 span {
+	width: 100px;
+	height: 30px;
+	font-size: 36px;
+	font-weight: 700;
+	color: #000;
+	position: relative;
+	top: -20px;
+	left: 40%;
+	z-index: 100;
+}
+.center .div2 .li2 .p1 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
+.center .div2 .li2 .p2 {
+	font-size: 18px;
+	color: #666
+}
+.center .div3 {
+	width: 80%;
+	height: 400px;
+	position: relative;
+	left: 10%;
+	top: 20px;
+}
+.center .div3 li {
+	width: 300px;
+	height: 400px;
+	float: left
+}
+.center .div3 ul li img {
+	width: 300px;
+	height: 400px;
+	float: left
+}
+.center .div3 ul .li2 {
+	position: relative;
+	top: 28px;
+}
+.center .div3 ul .li3 {
+	position: relative;
+	top: -4px;
+}
+.center .div4 {
+	width: 80%;
+	height: 400px;
+	position: relative;
+	left: 10%;
+	top: 20px;
+}
+.center .div4 ul li .p {
+	float: left
+}
+.center .div4 ul li .p1 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
+.center .div4 ul li .p2 {
+	font-size: 15px;
+	color: #666
+}
+.center .div4 .lid {
+	width: 180px;
+	height: 260px;
+	float: left;
+	margin: 30px;
+}
+.center .div4 ul .li2 a {
+	width: 80px;
+	height: 30px;
+	float: right;
+	position: relative;
+	top: -36px;
+}
+.center .div4 ul .li2 a img {
+	width: 20px;
+	height: 20px;
+	float: right;
+}
+.center .div4 ul li img {
+	width: 180px;
+	height: 260px;
+}
+.center .div5 {
+	width: 80%;
+	height: 400px;
+	position: relative;
+	left: 10%;
+	top: 20px;
+}
+.center .div5 ul li .p {
+	float: left
+}
+.center .div5 ul li .p1 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
+.center .div5 ul li .p2 {
+	font-size: 15px;
+	color: #666
+}
+.center .div5 .lid {
+	width: 180px;
+	height: 260px;
+	float: left;
+	margin: 30px;
+}
+.center .div5 ul li img {
+	width: 180px;
+	height: 260px;
+}
+.center .div6 {
+	width: 80%;
+	height: 400px;
+	position: relative;
+	left: 10%;
+	top: 20px;
+}
+.center .div6 ul li .p {
+	float: left
+}
+.center .div6 ul li .p1 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
+.center .div6 ul li .p2 {
+	font-size: 15px;
+	color: #666
+}
+.center .div6 .lid {
+	width: 180px;
+	height: 260px;
+	float: left;
+	margin: 30px;
+}
+.center .div6 ul li img {
+	width: 180px;
+	height: 260px;
+}
+.center .div7 {
+	width: 80%;
+	height: 50px;
+	position: relative;
+	left: 6%;
+}
+.center .div7 hr {
+	color: #CCC;
+	z-index: 0;
+}
+.center .div7 .h2 {
+	position: relative;
+	left: 72%;
+}
+.center .div7 .li1 span {
+	width: 100px;
+	height: 30px;
+	font-size: 36px;
+	font-weight: 700;
+	color: #000;
+	position: relative;
+	top: -20px;
+	left: 44%;
+}
+.center .div7 ul {
+	width: 80%;
+	height: 120px;
+	position: relative;
+	float: left;
+}
+.center .div7 ul li2 img {
+	width: 180px;
+	height: 120px;
+	position: relative;
+	float: left;
+}
+.center .div7 ul li3 img {
+	width: 180px;
+	height: 120px;
+	position: relative;
+}
+.center .div7 ul .li3 {
+	position: relative;
+	left: 600px;
+	top: -304px;
+}
+.footer {
+	width: 80%;
+	height: 80px;
+	position: relative;
+	left: 8%;
+	top: 360px;
+}
+.footer .div1 {
+	width: 15%;
+	height: 50px;
+	position: relative;
+	left: 6%;
+}
+.footer .div1 ul li .p1 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
+.footer .div1 ul li .p2 {
+	font-size: 15px;
+	color: #666
+}
+.footer .div2 {
+	width: 15%;
+	height: 50px;
+	position: relative;
+	left: 26%;
+	top: -50px;
+}
+.footer .div2 ul li .p1 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
+.footer .div2 ul li .p2 {
+	font-size: 15px;
+	color: #666
+}
+.footer .div3 {
+	width: 15%;
+	height: 50px;
+	position: relative;
+	left: 46%;
+	top: -100px;
+}
+.footer .div3 ul li .p1 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
+.footer .div3 ul li .p2 {
+	font-size: 15px;
+	color: #666
+}
+.footer .div4 {
+	width: 15%;
+	height: 50px;
+	position: relative;
+	left: 66%;
+	top: -150px;
+}
+.footer .div4 ul li .p1 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
+.footer .div4 ul li .p2 {
+	font-size: 15px;
+	color: #666
+}
+.footer .div5 {
+	width: 15%;
+	height: 50px;
+	position: relative;
+	left: 86%;
+	top: -200px;
+}
+.footer .div5 ul li .p1 {
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+}
+.footer .div5 ul li .p2 {
+	font-size: 15px;
+	color: #666
+}
+.footer .bottomtxt {
+	float: left;
+	width: 95%;
+	height: 60px;
+	position: relative;
+	left: 6%;
+	line-height: 60px;
+	border-top: 1px solid #666;
+	top: 20px;
+	font-size: 13px;
+	color: gray;
+}
+.footer .bottomtxt .bottomrightimg {
+	position: relative;
+	top: -60px;
+	float: right;
+	width: 300px;
+	height: 60px;
+}
+.footer .bottomtxt .bottomrightimg p {
+	float: left;
+	position: relative;
+	left: 70px;
+}
+.footer .bottomtxt .bottomrightimg .footer_bottom {
+	float: right;
+}
+.footer .bottomtxt .bottomrightimg .footer_bottom .a1 {
+	display: block;
+	width: 50px;
+	height: 40px;
+	position: relative;
+	left: -9px;
+	top: 10px;
+	background: url(../images/29.png) no-repeat;
+	float: left;
+}
+.footer .bottomtxt .bottomrightimg .footer_bottom .a1:hover {
+	background: url(../images/32.png) no-repeat;
+}
+.footer .bottomtxt .bottomrightimg .footer_bottom .a2 {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 10px;
+	background: url(../images/30.png) no-repeat;
+	left: -7px;
+	float: left;
+}
+.footer .bottomtxt .bottomrightimg .footer_bottom .a2 .bot_img1 {
+	display: none;
+}
+.footer .bottomtxt .bottomrightimg .footer_bottom .a3 .bot_img2 {
+	display: none;
+}
+footer .bottomtxt .bottomrightimg .footer_bottom .a2:hover {
+	background: url(../images/33.png) no-repeat;
+}
+.footer .bottomtxt .bottomrightimg .footer_bottom .a2:hover .bot_img1 {
+	display: block;
+	position: relative;
+	top: -220px;
+	left: -50px;
+}
+.footer .bottomtxt .bottomrightimg .footer_bottom .a3:hover .bot_img2 {
+	display: block;
+	position: relative;
+	top: -220px;
+	left: -50px;
+}
+.footer .bottomtxt .bottomrightimg .footer_bottom .a3 {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 10px;
+	background: url(../images/31.png) no-repeat;
+	float: left;
+	left: -5px;
+}
+.footer .bottomtxt .bottomrightimg .footer_bottom .a3:hover {
+	background: url(../images/34.png) no-repeat;
+}
+.common1 {
+	color: #333;
+	font-size: 16px;
+	text-decoration: none;
+}
+.common2 {
+	color: #666;
+	font-size: 14px;
+	text-decoration: none;
+}
