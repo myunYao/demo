@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div id="login-box">
+        <input type="text " id="username" placeholder="用户名、电话号码" name="username" required>
+        <input type="password " id="password" name="password" placeholder="密码 " required>
+        <div id="login-result"></div>
+        <button id="submit-button" class="btn">登录</button>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js "></script>
+    <script>
+    $("#submit-button ").click(function() {
+
+        //将用户名和密码用ajax发送到服务器
+
+        console.log("密码是：", $("#password").val());
+        $.post("/old-user-login", {
+                "username": $("#username").val(),
+                "password": $("#password").val()
+            },
+            function(data) {
+                console.log(data);
+                if (data == "ok") {
+                    //允许登录,跳转到主页
+                    location = "/index.html"
+                } else {
+                    //不允许登录
+                    $("#login-result").empty();
+                    $("#username").val("");
+                    $("#password").val("");
+                    $("#login-result").append($("<span class='err'>用户名或密码错误！</span>"));
+                }
+            });
+    });
+    </script>
+</body>
+
+</html>

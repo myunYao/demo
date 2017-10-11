@@ -1,0 +1,27 @@
+#login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#login-box>input {
+    width: 200px;
+    height: 40px;
+    border: 2px solid gray;
+}
+
+#submit-button.btn {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: deepskyblue;
+}
+
+.err {
+    color: red;
+}
+
+.ok {
+    color: green;
+}

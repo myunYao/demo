@@ -1,0 +1,28 @@
+#form-fill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid deepskyblue; */
+}
+
+#form-fill>input {
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid deepskyblue;
+}
+
+#form-fill>#submit {
+    width: 200px;
+    height: 50px;
+    border: 1px solid deepskyblue;
+    margin-top: 30px;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

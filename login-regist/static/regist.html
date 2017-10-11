@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="css/regist.css">
+</head>
+
+<body>
+    <form action="/new-user-regist" method="post" onsubmit="return checkBeforeSubmit()">
+        <div id="form-fill">
+            <input type="text" id="username" placeholder="用户名、电话号码" name="username">
+            <div class="user-box"></div>
+            <input type="email" placeholder="邮箱" name="email">
+            <input type="password" name="password" placeholder="密码">
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="确认密码">
+            <div id="check-password"></div>
+            <input type="submit" value="提交" id="submit">
+        </div>
+    </form>
+    <script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.js"></script>
+    <script>
+    $("#username").blur(function() {
+        // 当用户名输入框失去焦点，就在后台用ajax验证用户名是否存在
+        var username = $(this).val();
+        // 如果不为空，就用ajax发送到服务器
+        if (username != "") {
+            $.get("check-username", {
+                username: username
+            }, function(data) {
+                if (data == "yes") {
+                    isOk = false;
+                    // 表示用户名不可以使用
+                    $(".user-box").empty();
+                    $(".user-box").append("<span class='error'>该用户名已经被占用</span>");
+                } else {
+                    isOk = true;
+                    $(".user-box").empty();
+                    // 表示用户名可以使用
+                    $(".user-box").append("<span class='success'>该用户名可以使用</span>");
+                }
+            })
+        }
+    });
+    $("#confirm-password").blur(function() {
+
+        //判断两次密码是否相同
+        if ($("#password").val() !== $("#confirm-password").val()) {
+
+            //提醒用户密码不同
+            $("#check-password").empty();
+            $("#check-password").append($("<span class='err'>两次密码输入不同！</span>"));
+
+        } else {
+
+            $("#check-password").empty();
+
+        }
+
+
+    });
+
+
+    function checkBeforeSubmit() {
+
+        return isOk;
+
+    }
+    </script>
+</body>
+
+</html>
