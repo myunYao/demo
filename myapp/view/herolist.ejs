@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>英雄联盟银熊列表</title>
+    <style>
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    
+    #container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #top-show-img {
+        flex: 1;
+    }
+    
+    #hero-list {
+        flex: 1;
+    }
+    
+    #hero-img-box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    #hero-img-box img {
+        margin: 10px;
+        height: 80px;
+        width: 80px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img id="top-show-img" src="/images/top.png" alt="">
+        <div id="hero-list">
+            <div id="hero-img-box">
+                <% for(var i=0;i<hero2.length;i++){ %>
+                    <a href="<%= hero2[i].heroname %>">
+						<img src="<%= hero2[i].smallPic[0] %>" alt="">
+					</a>
+                    <% } %>
+            </div>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+        </div>
+    </div>
+</body>
+
+</html>

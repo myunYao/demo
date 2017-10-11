@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= hero.heroname %>
+    </title>
+    <link href="/css/detail.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+
+<body>
+   <!--  <div id="container">
+       <div id="skin-big-pic">
+       
+            <img src="<%= hero.bigPic[0] %>" alt="">
+           
+          <% for(var i=0;i<hero.bigPic.length;i++){ %>
+               <li><img src="<%= hero.bigPic[i] %>" alt=""></li>
+           <% } %>
+       </div>
+   
+       <div id="detail-info-box">
+               
+           <h2 id="herotitle">  <%= hero.herotitle %></h2>
+           <h1 id="heroname"> <%= hero.heroname %></h1>
+           <div id="position"></div>
+           <p id="bgstory">  <%= hero.bgstory %></p>
+          <div id="skin-small-pic">
+          
+               <% for(var i=0;i<hero.smallPic.length;i++){ %>
+              <li><img src="<%= hero.smallPic[i] %>" alt=""></li>
+               <% } %> 
+          </div>
+   
+       </div>
+   </div> -->
+
+
+<div id="container">
+    <div id="tFocus">
+        
+        <ul id="tFocus-pic">
+            <div id="skin-big-pic">
+                <% for(var i=0;i<hero.bigPic.length;i++){ %>
+                <li>
+                    <a href="#"><img src="<%= hero.bigPic[i] %>" class='bigPic' alt="" /></a>
+                </li>
+                <% } %> 
+            </div>   
+        </ul>
+        <div id="detail-info-box">
+                
+            <h1 id="herotitle">  <%= hero.herotitle %></h1>
+            <h2 id="heroname"> <%= hero.heroname %></h2>
+            <div id="position">
+                <% for(var i=0;i<hero.position.length;i++){ %>
+                    <span><%= hero.position[i] %></span>
+                <% } %> 
+            </div>
+            <p id="bgstory">  <%= hero.bgstory %></p>
+            <div id="skin-small-pic">
+                <div class="prev" id="prev"></div>
+                <div class="next" id="next"></div>
+                <div id="tFocusBtn">
+                <a href="javascript:void(0);" id="tFocus-leftbtn">上一张</a>
+                <div id="tFocus-btn">
+                    
+                    <ul>
+                        <% for(var i=0;i<hero.smallPic.length;i++){ %>
+                            <li class="active"><img src="<%= hero.smallPic[i] %>" width="87" height="57" alt="" /></li>
+                        <% } %> 
+                    </ul>
+                    
+                </div>
+                <a href="javascript:void(0);" id="tFocus-rightbtn">下一张</a>
+            </div>
+        </div>
+
+        </div>
+        
+    </div>
+</div>
+    <!--tFocus end-->
+    <script type="text/javascript">
+    addLoadEvent(Focus());
+    </script>
+</body>
+
+</html>
